@@ -1,1 +1,42 @@
+\newpage
+
 \section{Dynamics and Control system}
+
+There are various type of control method available for UR5 with torque control. This work presents a motion control strategy based on the dynamics of the UR5. To generate the required torque for motion control, The dynamics equation in joint space (equation 1) is used to compute required torque respect to the Joint state\footnote{Joint state: joint position, joint velocity, joint acceleration}. To control position, velocity and acceleration of the UR5 can be done by using the PD controller (equation 2)
+
+\begin{equation}
+    \tau = M(q)\ddot{q} + C(q, \dot{q}) + g(q)
+    \label{eq:Dynamics}
+\end{equation}
+
+\begin{equation}
+    \ddot{q} = \ddot{q_d} + K_p(q_d - q) + K_d(\dot{q}_d - \dot{q})
+    \label{eq:pd_control}
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $\tau$ is the joint torque Vector
+    \item $M(q)\ddot{q}$ is the Inertia Matrix
+    \item $C(q, \dot{q})$ is the Coriolis and Centrifugal Matrix
+    \item $g(q)$ is the Gravity Vector
+    \item $\ddot{q}$ is the computed acceleration (command)
+    \item $K_p$ and $K_d$ are the proportional and derivative gain matrices
+    \item $q_d$ and $q$ are the desired and actual joint positions
+    \item $\dot{q}_d$ and $\dot{q}$ are the desired and actual joint velocities
+    \item $\ddot{q_d}$ is the desired joint acceleration
+\end{itemize}
+
+However, In the dynamics model in joint space (equation 1) and PD controller (equation 2) are not able to control the force at the end-effector. The method for control motion and force at end-effector simultaneously is to apply the Hybrid force-motion control. Even so the hybrid force-motion control is using the dynamics model in task space make it more complicated to compute. This work presents the Z-axis elevation PI control(equation 3) method to control the force occurs at the end-effector. This method will not affect the control system to compensate the position error with stronger force respect to the time because of the motion controller is only PD controller.
+
+\begin{equation}
+    Z = -1 \cdot (K_p(W_{d} - W) + K_i \int(W_{d} - W) \frac{d}{dt})
+    \label{eq:z-control}
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $Z$ is the elevation in Z axis (task space)
+    \item $K_p$ and $K_i$ are the proportional and integral gain matrices
+    \item $W_d$ and $W$ are the desired and actual force at end-effector Z axis
+\end{itemize}
