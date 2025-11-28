@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1764356447.86187 "/Users/tien/Documents/GitHub/The-study-of-UR5-to-perform-the-drawing-task-using-torque-control/FinalReport/final_report.tex" "final_report.pdf" "final_report" 1764356448.62049 0
-  "/Users/tien/Documents/GitHub/The-study-of-UR5-to-perform-the-drawing-task-using-torque-control/FinalReport/final_report.tex" 1764309086.3725 2985 2f9a3cb44892494b1c9a7200adc959bb ""
+["pdflatex"] 1764357253.0154 "/Users/tien/Documents/GitHub/The-study-of-UR5-to-perform-the-drawing-task-using-torque-control/FinalReport/final_report.tex" "final_report.pdf" "final_report" 1764357253.75343 0
+  "/Users/tien/Documents/GitHub/The-study-of-UR5-to-perform-the-drawing-task-using-torque-control/FinalReport/final_report.tex" 1764356466.65396 2985 2f9a3cb44892494b1c9a7200adc959bb ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -130,18 +130,18 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1761658693 5544244 5ff659f77628e893c765a7952f870978 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1761658854 3629304 e30cdf6410e39160a0936003353d1f13 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "final_report.aux" 1764356448.5753 1454 8366d661608626730098db4c49fa6440 "pdflatex"
-  "final_report.tex" 1764309086.3725 2985 2f9a3cb44892494b1c9a7200adc959bb ""
+  "final_report.aux" 1764357253.70963 1454 8366d661608626730098db4c49fa6440 "pdflatex"
+  "final_report.tex" 1764356466.65396 2985 2f9a3cb44892494b1c9a7200adc959bb ""
   "img/control_system_diagram.png" 1764329324.48432 41926 6c20497317ddda8223bbabf2f48bd2e9 ""
   "img/fibo_logo.png" 1763566689.68893 30113 1d8a92ff3ed9957a71c4724c2dfb17d7 ""
   "img/rosgraph.png" 1764302606.81828 232758 ecfc33e9b375c2878a1260f95e28368c ""
   "img/rviz2.png" 1764327192.03645 471876 b01758a9ade06d38779dcac96fb3e75b ""
   "sub_tex/architecture.tex" 1764328312.10061 2493 93b9862db85ea5a6fc9b8dc6b9df53f7 ""
   "sub_tex/conclusion.tex" 1763567526.79293 20 b50204e17c0a475d3d65191e029fdf1d ""
-  "sub_tex/dynamics_and_control_system.tex" 1764356364.82389 3188 266be57986b2996b14aa0fbc4ce31625 ""
+  "sub_tex/dynamics_and_control_system.tex" 1764357184.52308 3357 4e971863035a471e8db0457b44ac7791 ""
   "sub_tex/inverse_kinematic.tex" 1763567350.00906 27 0bc09539498f1bdd691612f5bc617bbd ""
   "sub_tex/overview.tex" 1764309575.00247 130 31ce26579ad7488c3975c88c7c89f344 ""
-  "sub_tex/test_and_evaluation.tex" 1764356447.71289 139 ac7577df6f701f5b73d0ba5c4528de93 ""
+  "sub_tex/test_and_evaluation.tex" 1764357252.81327 249 c46f0c006b98b3658084873aa3241884 ""
   "sub_tex/trajectory_generation.tex" 1763567245.34335 115 10d82a4e2e219aa41ce98d5f7e86dbfe ""
   (generated)
   "final_report.aux"
