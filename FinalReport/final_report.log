@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.30)  29 NOV 2025 02:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.30)  29 NOV 2025 02:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -547,34 +547,62 @@ Overfull \hbox (33.06494pt too wide) in paragraph at lines 27--43
 []  
  []
 
-(sub_tex/overview.tex) (sub_tex/trajectory_generation.tex) (sub_tex/inverse_kinematic.tex
+(sub_tex/overview.tex) (sub_tex/architecture.tex
+<img/rosgraph.png, id=6, 2757.55219pt x 576.65437pt>
+File: img/rosgraph.png Graphic file (type png)
+<use img/rosgraph.png>
+Package pdftex.def Info: img/rosgraph.png  used on input line 7.
+(pdftex.def)             Requested size: 481.87546pt x 100.76643pt.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 15.
+
 
 [1
 
-{C:/Users/Aom/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./img/fibo_logo.png>]
+{C:/Users/Aom/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./img/fibo_logo.png> <./img/rosgraph.png>]
+Overfull \hbox (24.85333pt too wide) in paragraph at lines 34--36
+  \OT1/cmr/m/n/10 com-putes and broad-casts the 3D poses of a robot^^Ss links based on its URDF model and in-com-ing \OT1/cmtt/m/n/10 joint[]states 
+ []
 
-[2]) (sub_tex/dynamics_and_control_system.tex
+<img/rviz2.png, id=18, 2055.68pt x 1215.54124pt>
+File: img/rviz2.png Graphic file (type png)
+<use img/rviz2.png>
+Package pdftex.def Info: img/rviz2.png  used on input line 57.
+(pdftex.def)             Requested size: 481.87546pt x 284.92888pt.
+) (sub_tex/trajectory_generation.tex) (sub_tex/inverse_kinematic.tex
 
-[3]) (sub_tex/test_and_evaluation.tex) (sub_tex/conclusion.tex)
+[2 <./img/rviz2.png>]
 
-[4] (final_report.aux)
+[3]) (sub_tex/dynamics_and_control_system.tex
+
+[4]
+<img/control_system_diagram.png, id=35, 864.22874pt x 322.20375pt>
+File: img/control_system_diagram.png Graphic file (type png)
+<use img/control_system_diagram.png>
+Package pdftex.def Info: img/control_system_diagram.png  used on input line 48.
+(pdftex.def)             Requested size: 199.16928pt x 74.25279pt.
+
+
+[5 <./img/control_system_diagram.png>]) (sub_tex/test_and_evaluation.tex) (sub_tex/conclusion.tex)
+
+[6] (final_report.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16625 strings out of 468080
- 351561 string characters out of 5426739
- 759694 words of memory out of 5000000
- 44967 multiletter control sequences out of 15000+600000
- 635724 words of font info for 67 fonts, out of 8000000 for 9000
+ 16662 strings out of 468080
+ 352562 string characters out of 5426739
+ 759936 words of memory out of 5000000
+ 45000 multiletter control sequences out of 15000+600000
+ 635892 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,105p,873b,303s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Aom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on final_report.pdf (4 pages, 189499 bytes).
+ 99i,16n,105p,1206b,303s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Aom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Aom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on final_report.pdf (6 pages, 854260 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
