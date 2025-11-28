@@ -2,7 +2,7 @@
 
 \section{Dynamics and Control system}
 
-There are various type of control method available for UR5 with torque control. This work presents a motion control strategy based on the dynamics of the UR5. To generate the required torque for motion control, The dynamics equation in joint space (equation 1) is used to compute required torque respect to the Joint state\footnote{Joint state: joint position, joint velocity, joint acceleration}. To control position, velocity and acceleration of the UR5 can be done by using the PD controller (equation 2)
+There are various type of control method available for UR5 with torque control. This work presents a motion control strategy based on the dynamics of the UR5. To generate the required torque for motion control, The inverse dynamics equation in joint space (equation 1) is used to compute required torque respect to the Joint state\footnote{Joint state: joint position, joint velocity, joint acceleration}. To control position, velocity and acceleration of the UR5 using PD motion controller (equation 2)
 
 \begin{equation}
     \tau = M(q)\ddot{q} + C(q, \dot{q}) + g(q)
@@ -50,3 +50,4 @@ After apply PD motion controller and PI elevation controller, UR5 are able to co
     \label{fig:control_system_diagram}
 \end{figure}
 
+Lastly the inverse dynamics model calculation done by pinocchio framework on python. And Controlled by the custom code by this project team. (code implimentation here Github: )
