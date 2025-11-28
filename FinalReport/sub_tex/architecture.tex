@@ -1,0 +1,60 @@
+\section{Software architecture and Simulation}
+
+This work performed in Gazebo ignition physic simulation. The simulation simulates the UR5, pen, gravity, collision etc. ROS2 middleware using to interface the simulation and using as the backbone of the robot system. The software architecture can be display as Node and Topic (as shown on Fig.\ref{fig:software_architecture}) 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{img/rosgraph.png}
+    \caption{Nodes and topics}
+    \label{fig:software_architecture}
+\end{figure}
+
+The \texttt{force\_motion\_controller\_node} and \texttt{inverse\_kinematic\_node} were developed by the project team.
+
+\vspace{0.3cm}
+\textbf{1. \texttt{force\_motion\_controller\_node}} \\
+\hspace{0.5cm}
+This node acquires and filters the wrench from the F/T sensor, reads end-effector positions, computes UR5 dynamics, and generates torques for motion control (can be found in \texttt{ur\_controller} package).
+
+\vspace{0.3cm}
+\textbf{2. \texttt{inverse\_kinematic\_node}} \\
+\hspace{0.5cm}
+This node performs inverse kinematics calculations, Z-axis elevation force control and read trajectory from .csv file.
+
+\vspace{0.3cm}
+Additionally, There are several Node required to interface with the Gazebo
+
+\vspace{0.3cm}
+\textbf{1. \texttt{robot\_state\_broadcaster}} \\
+\hspace{0.5cm}
+This node publishes the current state (position, velocity) of individual joints to the \texttt{joint\_states} topic
+
+\vspace{0.3cm}
+\textbf{2. \texttt{robot\_state\_publisher}} \\
+\hspace{0.5cm}
+computes and broadcasts the 3D poses of a robot\'s links based on its URDF model and incoming \texttt{joint\_states} messages
+
+\vspace{0.3cm}
+\textbf{3. \texttt{ros\_gz\_bridge}} \\
+\hspace{0.5cm}
+The F/T sensor is instant function from Gazebo ignition. To acquire wrench from F/T sensor, only need to bridge the \texttt{gz\_topic} to the ROS2 topic using \texttt{ros\_gz\_bridge}
+
+\vspace{0.3cm}
+\textbf{4. \texttt{effort\_controller}} \\
+\hspace{0.5cm}
+This node use to control the UR5 joint torque. This node is part of  \texttt{ROS2\_control} framework 
+
+\vspace{0.3cm}
+Lastly, There is addition tools helps this project display drawing line and debugging 
+
+\vspace{0.3cm}
+\textbf{1. rviz2} \\
+\hspace{0.5cm}
+This program show the 3D model of the UR5, force and drawing line as show in Fig.\ref{fig:rviz2}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{img/rviz2.png}
+    \caption{rviz2 interface}
+    \label{fig:rviz2}
+\end{figure}
